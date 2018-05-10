@@ -23,9 +23,6 @@ module.exports = {
         test: /\.(otf|woff|woff2)$/,
         use: {
           loader: 'file-loader',
-          options: {
-            name: '../[name].[ext]',
-          }
         }
       },
     ],
