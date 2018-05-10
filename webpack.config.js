@@ -12,19 +12,21 @@ module.exports = {
       {
         test: /\.(sass|css)$/,
         use: ExtractTextPlugin.extract({
-          /*fallback: "style-loader",*/
+          fallback: "style-loader",
           use: [
             'css-loader',
             'sass-loader'
           ]
         })
-        /*
-        use: [
-            'style-loader',
-            'css-loader',
-            'sass-loader'
-        ],
-        */
+      },
+      {
+        test: /\.(otf|woff|woff2)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '../[name].[ext]',
+          }
+        }
       },
     ],
   },
