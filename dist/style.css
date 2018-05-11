@@ -156,6 +156,9 @@ a {
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.5rem; }
+      .menu-adress .row .menu-button__icon {
+        display: flex;
+        align-items: flex-end; }
 
 .menu-line {
   margin-top: 28px;
@@ -165,6 +168,18 @@ a {
   border: none;
   background-color: #919191;
   opacity: 0.13; }
+
+.wrapper {
+  margin-left: 263px;
+  margin-top: -35px; }
+  .wrapper__icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #893b67;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #893b67;
+    color: #fff; }
 
 .news {
   width: 100%;
