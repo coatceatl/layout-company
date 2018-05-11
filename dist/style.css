@@ -52,6 +52,9 @@ a {
 .col-4 {
   width: 25%; }
 
+.col-1-of-6 {
+  width: 16.5%; }
+
 .header-logo {
   padding-top: 25px;
   padding-right: 16px; }
@@ -278,3 +281,7 @@ a {
     font-weight: 400;
     line-height: 1.125rem;
     color: #000; }
+
+.footer {
+  padding-left: 142px;
+  padding-right: 203px; }
