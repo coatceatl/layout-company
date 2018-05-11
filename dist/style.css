@@ -50,9 +50,7 @@ a {
   width: 66%; }
 
 .col-4 {
-  width: 25%;
-  margin-left: 77px;
-  margin-right: 77px; }
+  width: 25%; }
 
 .header-logo {
   padding-top: 25px;
@@ -234,6 +232,49 @@ a {
     color: #5a5a58; }
 
 .news-bottom {
+  padding-left: 117px;
+  padding-right: 117px;
   width: 100%;
-  height: 156px;
+  height: max-content;
   background-color: rgba(83, 86, 90, 0.1); }
+  .news-bottom__date {
+    display: inline-flex;
+    font-family: 'Vida31Pro';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #000;
+    opacity: 0.4; }
+  .news-bottom__ribbon {
+    display: inline-flex;
+    width: max-content;
+    height: 16px;
+    background-color: #fff; }
+    .news-bottom__ribbon__active {
+      display: inline-flex;
+      height: 16px;
+      font-family: 'Vida31Pro';
+      background-color: #c5e71b; }
+    .news-bottom__ribbon__text {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-family: 'Vida31Pro';
+      font-size: 0.625rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.25rem;
+      color: #000; }
+      .news-bottom__ribbon__text__active {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Vida33Pro';
+        font-size: 0.625rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.25rem; }
+  .news-bottom__text {
+    font-family: 'Vida31Pro';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: #000; }
