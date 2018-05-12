@@ -207,7 +207,8 @@ a {
     .row-menu .nav-menu {
       margin-left: 0;
       padding-top: 50px;
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   .row-menu .nav-menu__list {
     display: flex;
     flex-direction: column;
@@ -249,37 +250,46 @@ a {
           display: block;
           padding-right: 20px; } }
 
-.row-menu .menu-adress {
-  margin-left: 77px;
-  width: 303px;
-  height: 130px; }
-  .row-menu .menu-adress h4 {
-    margin-bottom: 0;
-    font-family: 'Vida33Pro';
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #893b67; }
-  .row-menu .menu-adress .row {
-    justify-content: space-between; }
-    .row-menu .menu-adress .row p {
-      font-family: 'Vida31Pro';
-      font-size: 1rem;
+.adress {
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 768px) {
+    .adress {
+      flex-direction: row; } }
+  .adress .menu-adress {
+    margin-left: 77px;
+    width: 303px;
+    height: 130px; }
+    @media (max-width: 768px) {
+      .adress .menu-adress {
+        margin-left: 40px; } }
+    .adress .menu-adress h4 {
+      margin-bottom: 0;
+      font-family: 'Vida33Pro';
+      font-size: 1.5rem;
       font-weight: 400;
-      line-height: 1.5rem;
-      color: #000; }
-    .row-menu .menu-adress .row .menu-button {
-      display: flex;
-      align-items: center; }
-      .row-menu .menu-adress .row .menu-button__text {
-        padding-right: 10px;
-        padding-left: 10px;
-        font-family: 'Vida33Pro';
-        font-size: 0.875rem;
+      color: #893b67; }
+    .adress .menu-adress .row {
+      justify-content: space-between; }
+      .adress .menu-adress .row p {
+        font-family: 'Vida31Pro';
+        font-size: 1rem;
         font-weight: 400;
-        line-height: 1.5rem; }
-      .row-menu .menu-adress .row .menu-button__icon {
+        line-height: 1.5rem;
+        color: #000; }
+      .adress .menu-adress .row .menu-button {
         display: flex;
-        align-items: flex-end; }
+        align-items: center; }
+        .adress .menu-adress .row .menu-button__text {
+          padding-right: 10px;
+          padding-left: 10px;
+          font-family: 'Vida33Pro';
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.5rem; }
+        .adress .menu-adress .row .menu-button__icon {
+          display: flex;
+          align-items: flex-end; }
 
 .menu-line {
   margin-top: 28px;
@@ -289,6 +299,9 @@ a {
   border: none;
   background-color: #919191;
   opacity: 0.13; }
+  @media (max-width: 768px) {
+    .menu-line {
+      display: none; } }
 
 .wrapper {
   margin-left: 263px;

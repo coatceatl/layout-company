@@ -15,6 +15,7 @@
       margin-left: 0
       padding-top: 50px
       width: 100%
+      height: auto
 
     &__list
       display: flex
@@ -60,10 +61,20 @@
           display: block
           padding-right: 20px
 
+.adress
+  display: flex
+  flex-direction: column
+
+  @media (max-width: 768px)
+    flex-direction: row
+
   .menu-adress
     margin-left: 77px
     width: 303px
     height: 130px
+
+    @media (max-width: 768px)
+      margin-left: 40px
 
     h4
       margin-bottom: 0
@@ -106,6 +117,9 @@
   border: none
   background-color: $line-color
   opacity: 0.13
+
+  @media (max-width: 768px)
+    display: none
 
 .wrapper
   margin-left: 263px
