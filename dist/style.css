@@ -38,8 +38,6 @@ a {
 
 .col-2 {
   width: 50%;
-  margin-left: 40px;
-  margin-right: 50px;
   display: flex;
   align-items: baseline; }
 
@@ -55,6 +53,12 @@ a {
 .col-1-of-6 {
   width: 16.5%; }
 
+.container {
+  margin: 16px 40px; }
+
+.header {
+  width: 100%; }
+
 .row .header-navigation {
   justify-content: space-evenly;
   width: 100%; }
@@ -67,6 +71,10 @@ a {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.125rem; }
+  @media (max-width: 768px) {
+    .header-logo {
+      width: 100%;
+      margin-top: 30px; } }
 
 .header-nav {
   width: 100%;
@@ -81,12 +89,14 @@ a {
       .header-nav__menu__item a {
         font-family: 'Vida31Pro';
         font-weight: 400; }
+  @media (max-width: 768px) {
+    .header-nav {
+      display: none; } }
 
 .row .header-contacts {
   justify-content: flex-end;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 35px; }
+  padding-top: 20px; }
   .row .header-contacts__menu {
     display: flex;
     justify-content: space-around;
@@ -128,16 +138,25 @@ a {
     line-height: 1.25rem;
     color: #565f66; }
 
+@media (max-width: 768px) {
+  .menu-li {
+    display: none; } }
+
 .bg {
   height: 232px;
   background-image: url("/home/oksana/work/Landing/layout-company/img/bg.png"); }
   .bg .rectangle {
     position: absolute;
-    top: 265px;
+    top: 300px;
     left: 93px;
     width: 340px;
     height: 62px;
     background-color: #fff; }
+    @media (max-width: 768px) {
+      .bg .rectangle {
+        width: 238px;
+        height: 53px;
+        left: 40px; } }
     .bg .rectangle h2 {
       font-size: 3rem;
       font-family: 'Vida33Pro';
@@ -145,13 +164,19 @@ a {
       margin: 0 auto;
       padding-left: 18px;
       color: #414141; }
+      @media (max-width: 768px) {
+        .bg .rectangle h2 {
+          font-size: 2rem; } }
   .bg .rectangle-small {
     position: absolute;
-    top: 232px;
+    top: 262px;
     left: 93px;
     width: 130px;
     height: 39px;
     background-color: #fff; }
+    @media (max-width: 768px) {
+      .bg .rectangle-small {
+        left: 40px; } }
     .bg .rectangle-small p {
       font-size: 1.125rem;
       font-family: 'Vida31Pro';
@@ -166,7 +191,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding-top: 64px;
-  margin-left: 93px;
+  margin-left: 53px;
   width: 327px;
   height: 382px; }
   .nav-menu__list {
@@ -256,7 +281,7 @@ a {
     font-weight: 400;
     color: #414141; }
   .news__note {
-    width: 874px;
+    margin-right: 40px;
     padding: 24px;
     margin-bottom: 24px;
     border-radius: 8px;
@@ -276,7 +301,6 @@ a {
   .news__icon {
     text-align: right; }
   .news__heading {
-    width: 731px;
     font-family: 'Vida33Pro';
     font-size: 1.125rem;
     font-weight: 400;

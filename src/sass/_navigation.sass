@@ -1,3 +1,6 @@
+.header
+  width: 100%
+
 .row .header-navigation
   justify-content: space-evenly
   width: 100%
@@ -11,6 +14,10 @@
     font-size: 2.5rem
     font-weight: 400
     line-height: 1.125rem
+
+  @media (max-width: 768px)
+    width: 100%
+    margin-top: 30px
 
 .header-nav
   width: 100%
@@ -29,11 +36,13 @@
         font-family: 'Vida31Pro'
         font-weight: 400
 
+  @media (max-width: 768px)
+    display: none
+
 .row .header-contacts
   justify-content: flex-end
   width: 100%
   padding-top: 20px
-  padding-bottom: 35px
 
   &__menu
     display: flex
@@ -54,7 +63,6 @@
         border: 1px solid $button-color
         border-radius: 14px
         padding: 5px 15px
-
 
   .header-button-icon
     display: inline-block
@@ -85,6 +93,10 @@
     line-height: 1.25rem
     color: $phone-color
 
+.menu-li
+  @media (max-width: 768px)
+    display: none
+
 
 
 .bg
@@ -93,11 +105,16 @@
 
   .rectangle
     position: absolute
-    top: 265px;
+    top: 300px;
     left: 93px
     width: 340px
     height: 62px
     background-color: $bg-color
+
+    @media (max-width: 768px)
+      width: 238px
+      height: 53px
+      left: 40px
 
     h2
       font-size: 3rem
@@ -107,13 +124,19 @@
       padding-left: 18px
       color: $h-color
 
+      @media (max-width: 768px)
+        font-size: 2rem
+
   .rectangle-small
     position: absolute
-    top: 232px
+    top: 262px
     left: 93px
     width: 130px
     height: 39px
     background-color: $bg-color
+
+    @media (max-width: 768px)
+      left: 40px
 
     p
       font-size: 1.125rem
