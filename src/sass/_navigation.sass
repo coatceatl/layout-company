@@ -8,6 +8,12 @@
 .header-logo
   margin-top: auto
   margin-bottom: auto
+  z-index: 100
+
+  @media (max-width: 768px)
+    position: fixed
+    top: 23px
+    left: 40px
 
   .menu-link
     font-family: 'Lobster', cursive
@@ -29,15 +35,29 @@
     justify-content: space-around
     width: 100%
 
+    @media (max-width: 768px)
+      display: none
+
+      &__mobile-open
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        padding-left: 40px
+        z-index: 100
+
     &__item
       font-size: 0.9rem
 
       a
         font-family: 'Vida31Pro'
         font-weight: 400
-
-  @media (max-width: 768px)
-    display: none
 
 .row .header-contacts
   justify-content: flex-end
@@ -103,7 +123,8 @@
 
   @media (max-width: 768px)
     display: flex
-    position: relative
+    position: fixed
+    top: 55px
     width: 32px
     height: 21px
     background: none
