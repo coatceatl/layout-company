@@ -159,8 +159,8 @@ a {
     .hamburger {
       display: flex;
       position: relative;
-      width: 24px;
-      height: 25px;
+      width: 32px;
+      height: 21px;
       background: none;
       border: none;
       padding: 0; } }
@@ -180,6 +180,8 @@ a {
       top: 0;
       content: '';
       transform-origin: 50% 50%; }
+    .hamburger .burger-icon:before {
+      top: calc(100% - 3px); }
 
 .bg {
   height: 232px;
