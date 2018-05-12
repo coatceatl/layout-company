@@ -54,10 +54,11 @@ a {
       width: 100%; } }
 
 .col-4 {
-  width: 25%; }
-
-.col-1-of-6 {
-  width: 16.5%; }
+  width: 25%;
+  padding-bottom: 20px; }
+  @media (max-width: 768px) {
+    .col-4 {
+      width: 50%; } }
 
 .container {
   margin: 16px 40px; }
@@ -397,9 +398,9 @@ a {
     background-color: #fff; }
     .news-bottom__ribbon__active {
       display: inline-flex;
-      height: 16px;
-      font-family: 'Vida31Pro';
-      background-color: #c5e71b; }
+      height: 16px; }
+      .news-bottom__ribbon__active .ribbon-bg {
+        position: absolute; }
     .news-bottom__ribbon__text {
       padding-left: 5px;
       padding-right: 5px;
@@ -410,8 +411,9 @@ a {
       line-height: 1.25rem;
       color: #000; }
       .news-bottom__ribbon__text__active {
-        padding-left: 5px;
-        padding-right: 5px;
+        position: absolute;
+        top: 0;
+        padding-left: 14px;
         font-family: 'Vida33Pro';
         font-size: 0.625rem;
         font-weight: 400;
@@ -426,12 +428,18 @@ a {
 
 .footer {
   padding: 40px 203px 40px 120px; }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px; } }
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%; }
+  @media (max-width: 768px) {
+    .footer-contacts {
+      justify-content: flex-start; } }
 
 .social {
   padding-bottom: 40px; }
@@ -460,16 +468,18 @@ a {
   line-height: 1.125rem;
   color: #424242; }
 
-.footer-nav__title {
-  padding-bottom: 10px;
-  font-family: 'Vida33Pro';
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: #000; }
-
-.footer-nav__list {
-  font-family: 'Vida31Pro';
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5rem; }
+.row-footer {
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .row-footer .footer-nav__title {
+    padding-bottom: 10px;
+    font-family: 'Vida33Pro';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #000; }
+  .row-footer .footer-nav__list {
+    font-family: 'Vida31Pro';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem; }

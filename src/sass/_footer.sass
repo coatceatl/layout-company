@@ -1,11 +1,17 @@
 .footer
   padding: 40px 203px 40px 120px
 
+  @media (max-width: 768px)
+    padding: 40px
+
 .footer-contacts
   display: flex
   flex-direction: column
   justify-content: space-around
   height: 100%
+
+  @media (max-width: 768px)
+    justify-content: flex-start
 
 .social
   padding-bottom: 40px
@@ -36,18 +42,22 @@
   line-height: 1.125rem
   color: $adress-color
 
-.footer-nav
+.row-footer
+  flex-flow: row wrap
+  justify-content: space-between
 
-  &__title
-    padding-bottom: 10px
-    font-family: 'Vida33Pro'
-    font-size: 0.875rem
-    font-weight: 400
-    line-height: 1.5rem
-    color: $base-color
+  .footer-nav
 
-  &__list
-    font-family: 'Vida31Pro'
-    font-size: 0.875rem
-    font-weight: 400
-    line-height: 1.5rem
+    &__title
+      padding-bottom: 10px
+      font-family: 'Vida33Pro'
+      font-size: 0.875rem
+      font-weight: 400
+      line-height: 1.5rem
+      color: $base-color
+
+    &__list
+      font-family: 'Vida31Pro'
+      font-size: 0.875rem
+      font-weight: 400
+      line-height: 1.5rem

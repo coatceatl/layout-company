@@ -27,8 +27,9 @@
     &__active
       display: inline-flex
       height: 16px
-      font-family: 'Vida31Pro'
-      background-color: $action-color
+
+      .ribbon-bg
+        position: absolute
 
     &__text
       padding-left: 5px
@@ -41,8 +42,9 @@
       color: $base-color
 
       &__active
-        padding-left: 5px
-        padding-right: 5px
+        position: absolute
+        top: 0
+        padding-left: 14px
         font-family: 'Vida33Pro'
         font-size: 0.625rem
         font-weight: 400
