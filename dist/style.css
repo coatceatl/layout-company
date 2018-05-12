@@ -59,6 +59,9 @@ a {
   @media (max-width: 768px) {
     .col-4 {
       width: 50%; } }
+  @media (max-width: 640px) {
+    .col-4 {
+      width: 100%; } }
 
 .container {
   margin: 16px 40px; }
@@ -164,6 +167,9 @@ a {
         width: 238px;
         height: 53px;
         left: 40px; } }
+    @media (max-width: 640px) {
+      .bg .rectangle {
+        width: 211px; } }
     .bg .rectangle h2 {
       font-size: 3rem;
       font-family: 'Vida33Pro';
@@ -174,6 +180,11 @@ a {
       @media (max-width: 768px) {
         .bg .rectangle h2 {
           font-size: 2rem; } }
+      @media (max-width: 640px) {
+        .bg .rectangle h2 {
+          font-size: 1.625rem;
+          padding-top: 10px;
+          padding-left: 28px; } }
   .bg .rectangle-small {
     position: absolute;
     top: 262px;
@@ -192,6 +203,9 @@ a {
       padding-top: 14px;
       padding-left: 19px;
       color: #777b80; }
+      @media (max-width: 640px) {
+        .bg .rectangle-small p {
+          padding-left: 29px; } }
 
 @media (max-width: 768px) {
   .row-menu {
@@ -431,6 +445,9 @@ a {
   @media (max-width: 768px) {
     .footer {
       padding: 40px; } }
+  @media (max-width: 768px) and (max-width: 640px) {
+    .footer .row-footer {
+      flex-direction: column; } }
 
 .footer-contacts {
   display: flex;
@@ -483,3 +500,6 @@ a {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5rem; }
+    @media (max-width: 640px) {
+      .row-footer .footer-nav__list {
+        display: none; } }

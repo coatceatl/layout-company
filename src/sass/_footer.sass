@@ -4,6 +4,10 @@
   @media (max-width: 768px)
     padding: 40px
 
+    .row-footer
+      @media (max-width: 640px)
+        flex-direction: column
+
 .footer-contacts
   display: flex
   flex-direction: column
@@ -61,3 +65,7 @@
       font-size: 0.875rem
       font-weight: 400
       line-height: 1.5rem
+
+      @media (max-width: 640px)
+        display: none
+
