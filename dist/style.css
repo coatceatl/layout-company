@@ -152,6 +152,35 @@ a {
   .menu-li {
     display: none; } }
 
+.hamburger {
+  display: none;
+  z-index: 100; }
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      position: relative;
+      width: 24px;
+      height: 25px;
+      background: none;
+      border: none;
+      padding: 0; } }
+  .hamburger .burger-icon {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #893b67;
+    margin: auto; }
+    .hamburger .burger-icon:before, .hamburger .burger-icon:after {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: #893b67;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      content: '';
+      transform-origin: 50% 50%; }
+
 .bg {
   height: 232px;
   background-image: url("/home/oksana/work/Landing/layout-company/img/bg.png"); }
