@@ -80,9 +80,9 @@
     </header>
     <main>
     <div class='container'>
-      <div class='row'>
+      <div class='row row-menu'>
         <div class='col-1-of-3'>
-          <section id='menu' class='menu'>
+          <section class='menu'>
             <nav class='nav-menu'>
               <ul class='nav-menu__list'>
                 <li class='nav-menu__list__item'>
@@ -103,16 +103,18 @@
                 <li class='nav-menu__list__item'>
                   <a href='#'>Инструкция</a>
                 </li>
-                <li class='nav-menu__list__item__border'>
-                  <a href='#' class='button'>Уведомления
-                    <div class='wrapper'>
-                      <div class='wrapper__icon'>
-                        <span>6</span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
               </ul>
+              <div class='nav-menu-border'>
+                <a href='#' class='button'>
+                  <span>Уведомления</span>
+                  <span class='button__arrow'><i class="fa fa-caret-down"></i></span>
+                </a>
+                <div class='wrapper'>
+                  <div class='wrapper__icon'>
+                    <span>6</span>
+                  </div>
+                </div>
+              </div>
             </nav>
             <hr class='menu-line' />
             <div class='menu-adress'>
