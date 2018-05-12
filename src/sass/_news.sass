@@ -4,6 +4,10 @@
   border-left: 1px solid $border-color
   padding-left: 40px
 
+  @media (max-width: 768px)
+    padding-left: 0
+    border-left: none
+
   h3
     margin-top: 0
     font-size: 2.25rem
@@ -18,6 +22,10 @@
     margin-bottom: 24px
     border-radius: 8px
     border: 1px solid $border-color
+
+    @media (max-width: 768px)
+      margin-bottom: 36px
+      margin-right: 0
 
     &__active
       background-color: $bg-active
