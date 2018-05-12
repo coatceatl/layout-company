@@ -283,5 +283,51 @@ a {
     color: #000; }
 
 .footer {
-  padding-left: 142px;
-  padding-right: 203px; }
+  padding: 40px 203px 40px 120px; }
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; }
+
+.social {
+  padding-bottom: 40px; }
+  .social__icon {
+    padding-right: 20px; }
+
+.phone {
+  padding-bottom: 17px;
+  font-family: 'Vida33Pro';
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #424242; }
+
+.adress {
+  font-family: 'Vida31Pro';
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem; }
+
+.email {
+  padding-bottom: 30px;
+  font-family: 'Vida31Pro';
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #424242; }
+
+.footer-nav__title {
+  padding-bottom: 10px;
+  font-family: 'Vida33Pro';
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #000; }
+
+.footer-nav__list {
+  font-family: 'Vida31Pro';
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem; }
