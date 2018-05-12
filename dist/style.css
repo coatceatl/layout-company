@@ -69,16 +69,62 @@ a {
     line-height: 1.125rem; }
 
 .header-nav {
+  width: 100%;
   padding-top: 42px;
   padding-bottom: 35px; }
   .header-nav__menu {
-    display: flex; }
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
     .header-nav__menu__item {
-      padding-left: 23px;
       font-size: 0.9rem; }
       .header-nav__menu__item a {
         font-family: 'Vida31Pro';
         font-weight: 400; }
+
+.row .header-contacts {
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 42px;
+  padding-bottom: 35px; }
+  .row .header-contacts__menu {
+    display: flex;
+    justify-content: space-around;
+    width: 80%; }
+    .row .header-contacts__menu__item {
+      font-family: 'Vida31Pro';
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.25rem; }
+      .row .header-contacts__menu__item a {
+        color: #53565a; }
+      .row .header-contacts__menu__item .border {
+        border: 1px solid #53565a;
+        border-radius: 14px;
+        padding: 5px 15px; }
+  .row .header-contacts .header-button-icon {
+    display: inline-block;
+    padding-right: 10px; }
+    .row .header-contacts .header-button-icon .button-wrapper {
+      margin-left: 14px;
+      margin-top: -23px; }
+      .row .header-contacts .header-button-icon .button-wrapper__icon {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #893b67;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #893b67;
+        color: #fff; }
+        .row .header-contacts .header-button-icon .button-wrapper__icon .icon {
+          width: 6px;
+          height: 9px; }
+  .row .header-contacts .phone {
+    font-family: 'Vida33Pro';
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #565f66; }
 
 .bg {
   height: 232px;
@@ -166,6 +212,7 @@ a {
       align-items: center; }
       .menu-adress .row .menu-button__text {
         padding-right: 10px;
+        padding-left: 10px;
         font-family: 'Vida33Pro';
         font-size: 0.875rem;
         font-weight: 400;

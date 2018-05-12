@@ -13,19 +13,77 @@
     line-height: 1.125rem
 
 .header-nav
+  width: 100%
   padding-top: 42px
   padding-bottom: 35px
 
   &__menu
     display: flex
+    justify-content: space-around
+    width: 100%
 
     &__item
-      padding-left: 23px;
       font-size: 0.9rem
 
       a
         font-family: 'Vida31Pro'
         font-weight: 400
+
+.row .header-contacts
+  justify-content: flex-end
+  width: 100%
+  padding-top: 42px
+  padding-bottom: 35px
+
+  &__menu
+    display: flex
+    justify-content: space-around
+    width: 80%
+
+    &__item
+      font-family: 'Vida31Pro'
+      font-size: 0.875rem
+      font-weight: 400
+      line-height: 1.25rem
+
+      a
+        color: $button-color
+
+      .border
+        border: 1px solid $button-color
+        border-radius: 14px
+        padding: 5px 15px
+
+
+  .header-button-icon
+    display: inline-block
+    padding-right: 10px
+
+    .button-wrapper
+      margin-left: 14px
+      margin-top: -23px
+
+      &__icon
+        width: 16px
+        height: 16px;
+        border: 1px solid #893b67;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #893b67;
+        color: #fff;
+
+        .icon
+          width: 6px
+          height: 9px
+
+  .phone
+    font-family: 'Vida33Pro'
+    font-size: 1.125rem
+    font-weight: 400
+    line-height: 1.25rem
+    color: $phone-color
+
+
 
 .bg
   height: 232px
