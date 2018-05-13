@@ -17,16 +17,38 @@
       .row
         flex-direction: column
 
-        .header-nav
-          &__menu
-            display: flex
-            flex-direction: column
+        .header-navigation
+          height: 50vh
+          justify-content: space-between
+
+          .header-logo
+            margin-bottom: 60px
+            margin-top: 50px
+
+          .header-nav
+            height: 100%
+            padding-top: 0
+
+            &__menu
+              display: flex
+              flex-direction: column
+              height: 100%
+
+              &__item
+                font-size: 1.5rem
 
         .header-contacts__menu
           align-items: start
+          height: 50vh
 
           .menu-li
             display: flex
+            font-size: 1.5rem
+
+            .border
+              border: none
+              padding-left: 0
+              color: $color-link
 
 .row .header-navigation
   justify-content: space-evenly
@@ -133,6 +155,7 @@
     display: flex
     position: fixed
     top: 55px
+    right: 20px
     width: 32px
     height: 21px
     background: none
