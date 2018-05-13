@@ -23,7 +23,6 @@
 
           .header-logo
             margin-bottom: 60px
-            margin-top: 50px
 
           .header-nav
             height: 100%
@@ -37,18 +36,42 @@
               &__item
                 font-size: 1.5rem
 
-        .header-contacts__menu
-          align-items: start
-          height: 50vh
+        .header-contacts
+          height: 40vh
 
-          .menu-li
+          .hidden
             display: flex
-            font-size: 1.5rem
+            height: 60%
 
-            .border
-              border: none
-              padding-left: 0
-              color: $color-link
+            li
+              font-size: 1.5rem
+              font-family: 'Vida31Pro'
+
+              .border
+                border: none
+                padding-left: 0
+                color: $color-link
+
+                i
+                  display: none
+
+              .header-button-icon
+
+                img
+                  width: 27px
+
+                .button-wrapper
+                  margin-left: 20px
+                  margin-top: -32px
+
+          .header-contacts__menu
+            align-items: start
+            position: relative
+            width: 60vw
+
+            .phone
+              font-size: 2.5rem
+              padding-top: 20px
 
 .row .header-navigation
   justify-content: space-evenly
@@ -67,7 +90,6 @@
 
   @media (max-width: 768px)
     width: 100%
-    margin-top: 30px
 
 .header-nav
   width: 100%
@@ -99,6 +121,10 @@
     justify-content: space-around
     align-items: center
     width: 80%
+
+  .hidden
+    @media (max-width: 768px)
+      display: none
 
     &__item
       font-family: 'Vida31Pro'
@@ -142,10 +168,6 @@
     font-weight: 400
     line-height: 1.25rem
     color: $phone-color
-
-.menu-li
-  @media (max-width: 768px)
-    display: none
 
 .hamburger
   display: none
