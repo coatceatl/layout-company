@@ -1,6 +1,33 @@
 .header
   width: 100%
 
+  @media (max-width: 768px)
+    &__mobile-open
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      position: fixed
+      margin: 0
+      height: 100%
+      width: 100%
+      padding-left: 40px
+      background-color: $bg-color
+      z-index: 100
+
+      .row
+        flex-direction: column
+
+        .header-nav
+          &__menu
+            display: flex
+            flex-direction: column
+
+        .header-contacts__menu
+          align-items: start
+
+          .menu-li
+            display: flex
+
 .row .header-navigation
   justify-content: space-evenly
   width: 100%
@@ -9,11 +36,6 @@
   margin-top: auto
   margin-bottom: auto
   z-index: 100
-
-  @media (max-width: 768px)
-    position: fixed
-    top: 23px
-    left: 40px
 
   .menu-link
     font-family: 'Lobster', cursive
@@ -37,20 +59,6 @@
 
     @media (max-width: 768px)
       display: none
-
-      &__mobile-open
-        display: flex
-        flex-direction: column
-        justify-content: space-evenly
-        position: fixed
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        height: 100%
-        width: 100%
-        padding-left: 40px
-        z-index: 100
 
     &__item
       font-size: 0.9rem
