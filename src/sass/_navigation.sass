@@ -190,37 +190,42 @@
     border: none
     padding: 0
 
-    &__active
-      opacity: 0
-
-      &:after
-        transform: rotate(-45deg)
-        top: 9px
-
-      &:before
-        transform: rotate(45deg)
-        top: 9px
-
-  .burger-icon
-    display: block
-    height: 3px
-    width: 100%
-    background-color: $color-link
-    margin: auto
-
-    &:before, &:after
+    .burger-icon
       display: block
       height: 3px
       width: 100%
       background-color: $color-link
       margin: auto
-      position: absolute
-      top: 0
-      content: ''
-      transform-origin: 50% 50%
 
-    &:before
-      top: calc(100% - 3px)
+      &:before, &:after
+        display: block
+        height: 3px
+        width: 100%
+        background-color: $color-link
+        margin: auto
+        position: absolute
+        top: 0
+        content: ''
+        transform-origin: 50% 50%
+
+      &:before
+        top: calc(100% - 3px)
+
+    &__active
+      .burger-icon
+        &:after
+          transform: rotate(-45deg)
+          top: 9px
+
+    &__active
+      .burger-icon
+        &:before
+          transform: rotate(45deg)
+          top: 9px
+
+    &__active
+      .burger-icon
+         background-color: transparent
 
 .bg
   height: 232px

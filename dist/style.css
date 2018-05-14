@@ -224,32 +224,32 @@ a {
       background: none;
       border: none;
       padding: 0; }
-      .hamburger__active {
-        opacity: 0; }
-        .hamburger__active:after {
-          transform: rotate(-45deg);
-          top: 9px; }
-        .hamburger__active:before {
-          transform: rotate(45deg);
-          top: 9px; } }
-  .hamburger .burger-icon {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #893b67;
-    margin: auto; }
-    .hamburger .burger-icon:before, .hamburger .burger-icon:after {
-      display: block;
-      height: 3px;
-      width: 100%;
-      background-color: #893b67;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      content: '';
-      transform-origin: 50% 50%; }
-    .hamburger .burger-icon:before {
-      top: calc(100% - 3px); }
+      .hamburger .burger-icon {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #893b67;
+        margin: auto; }
+        .hamburger .burger-icon:before, .hamburger .burger-icon:after {
+          display: block;
+          height: 3px;
+          width: 100%;
+          background-color: #893b67;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          content: '';
+          transform-origin: 50% 50%; }
+        .hamburger .burger-icon:before {
+          top: calc(100% - 3px); }
+      .hamburger__active .burger-icon:after {
+        transform: rotate(-45deg);
+        top: 9px; }
+      .hamburger__active .burger-icon:before {
+        transform: rotate(45deg);
+        top: 9px; }
+      .hamburger__active .burger-icon {
+        background-color: transparent; } }
 
 .bg {
   height: 232px;
