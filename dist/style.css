@@ -60,9 +60,10 @@ a {
   @media (max-width: 768px) {
     .col-4 {
       width: 50%; } }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) and (max-width: 640px) {
     .col-4 {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; } }
 
 .container {
   margin: 16px 40px; }
@@ -163,26 +164,27 @@ a {
 .row .header-contacts {
   justify-content: flex-end;
   width: 100%;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-left: 200px; }
+  @media (max-width: 768px) {
+    .row .header-contacts {
+      padding-left: 0; } }
   .row .header-contacts__menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%; }
+    .row .header-contacts__menu__item .menu-li {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.25rem; }
+      .row .header-contacts__menu__item .menu-li .header-contacts-buttom .border {
+        border: 1px solid #53565a;
+        border-radius: 14px;
+        padding: 5px 15px; }
   @media (max-width: 768px) {
     .row .header-contacts .hidden {
       display: none; } }
-  .row .header-contacts .hidden__item {
-    font-family: 'Vida31Pro';
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.25rem; }
-    .row .header-contacts .hidden__item a {
-      color: #53565a; }
-    .row .header-contacts .hidden__item .border {
-      border: 1px solid #53565a;
-      border-radius: 14px;
-      padding: 5px 15px; }
   @media (max-width: 768px) {
     .row .header-contacts .visible {
       margin-right: 20px; } }
@@ -523,7 +525,8 @@ a {
       font-weight: 400;
       text-transform: uppercase;
       line-height: 1.25rem;
-      color: #000; }
+      color: #000;
+      margin: 0; }
       .news-bottom__ribbon__text__active {
         position: absolute;
         top: 0;
@@ -532,7 +535,8 @@ a {
         font-size: 0.625rem;
         font-weight: 400;
         text-transform: uppercase;
-        line-height: 1.25rem; }
+        line-height: 1.25rem;
+        margin: 0; }
   .news-bottom__text {
     font-family: 'Vida31Pro';
     font-size: 0.875rem;
